@@ -1,0 +1,152 @@
+<HTML>
+
+<!--
+Lode Runner!!! HTML
+
+-->
+
+<HEAD>
+    <meta charset="UTF-8">
+    <title>Programming Languages and Environments (Javascript)</title>
+
+    <!-- 
+        Some aspects of this page only load if online, 
+        like for example the font used, and the music. 
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" 
+    rel="stylesheet">
+    <SCRIPT TYPE="text/javascript" src="LodeRunner0.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" src="LodeRunner.js"></SCRIPT>
+
+    <style>
+
+
+        /* 
+            STYLYING
+
+            The color scheme used in the styling of this page is the SNES color pallete
+            https://www.color-hex.com/color-palette/22515
+        */
+        body {
+            font-family: 'Press Start 2P';
+            background-color: #cec9cc;
+        }
+
+        #conteudo {
+            text-align: center;
+        }
+
+        canvas {
+            background-color: white;
+            border: 5px solid #211a21;
+        }
+
+        .ui {
+            background-color: #908a99;
+            padding: 5px;
+            border: 1px solid #211a21;
+        }
+
+        .button {
+            background-color: #b5b6e4;
+        }
+
+        .dropdown {
+            background-color: #4f43ae;
+        }
+
+        .vl {
+            border-left: 2px solid #211a21;
+            padding: 5px 0 5px 15px;
+        }
+        /*STYLING END*/
+
+        
+        /* CENTERING -- comment out until "CENTERING END" if the page doensn't show properly*/
+        #pagina {
+            min-height: 100%;
+            min-width: 100%;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        #conteudo {
+            align-self: center;
+        }
+        /* CENTERING END*/
+    </style>
+</HEAD>
+
+
+<BODY onload="onLoad()">
+    <div id="pagina">
+        <div id="conteudo">
+
+            <span class="ui" id="titulo"> LodeRunner -- João Arvana (54982), Sara Relvas (55596)
+            </span>
+            <p></p>
+            <CANVAS id="canvas1" width="504" height="272">
+                Your browser doesn't support the HTML5 CANVAS tag.
+            </CANVAS>
+            <p></p>
+            <FORM NAME="form1">
+
+                <span class="ui"><INPUT class="button" style="font-family:'Press Start 2P'" 
+                    TYPE="button" ID="resetgame" VALUE="Reset Game" disabled SIZE=12>
+                        <span class="vl"></span>
+                        <INPUT class="button" style="font-family:'Press Start 2P'" 
+                        TYPE="button" ID="pausegame" VALUE="Start Game" SIZE=12>
+                        <span class="vl"></span>
+                        <INPUT class="button" style="font-family:'Press Start 2P'" 
+                        TYPE="button" ID="pauseaudio" VALUE="Start Music" SIZE=12>
+                </span>
+                        
+                <p></p>
+                <span class="ui">
+                    <span id="info">Collectibles:<span id='progressHeroCollectibles'>0</span>/<span
+                            id='progressTotalCollectibles'>0</span></span>
+                    <span class="vl"></span>
+                    <span id="info">Lives left:<span id='lives'>0</span></span>
+                    <span class="vl"></span>
+                    <span id="info">Score:<span id='points'>0</span></span>
+                    <span class="vl"></span>
+                    <span id="info">Time:<span id='timer'>0</span></span>
+                </span>
+                <p></p>
+                <span class="ui">
+                    <span id="info">Current level:<span id='currentlevel'>0</span>
+                    <span class="vl"></span>
+                    <span>Choose a level:</span><select id="levels" class="dropdown"
+                        style="font-family:'Press Start 2P'">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                    </select>      
+                    <INPUT TYPE="button" disabled class="button" ID="change_level" VALUE="Change" 
+                    SIZE=10 style="font-family:'Press Start 2P'">
+                </span>
+            </FORM>
+        </div>
+    </div>
+</BODY>
+
+</HTML>
+<!-- código inicial de AMD/2020 -->
+<!-- vim:set ts=4 sw=4 et: -->
