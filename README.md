@@ -9,7 +9,7 @@ The guidelines were:
 
 
 **Keys**
-The Hero is controlled via the keyboard, using the following keys:
+- The Hero is controlled via the keyboard, using the following keys:
 - 'O', 'J', '←' - to the left.
 - 'P', 'L', '→' - to the right.
 - 'Q', 'I', '↑' - up.
