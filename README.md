@@ -8,13 +8,13 @@ The guidelines were:
     In this programming project, we ask you to program in JavaScript a variant of the Lode Runner game, much like the original Macintosh version. We will use the original             graphics, plus the official scenarios corresponding to the first 16 levels. In our program, the two most important differences from the original game are the following: (1)       the movement of the characters is more rudimentary, being done at the square rather than the pixel level; (2) the rules for firing the gun by the hero are different.
 
 
-Keys
+**Keys**
 The Hero is controlled via the keyboard, using the following keys:
-'O', 'J', '←' - to the left.
-'P', 'L', '→' - to the right.
-'Q', 'I', '↑' - up.
-'A', 'K', '↓' - downward.
-' ' key - shoot on the side you are facing.
+- 'O', 'J', '←' - to the left.
+- 'P', 'L', '→' - to the right.
+- 'Q', 'I', '↑' - up.
+- 'A', 'K', '↓' - downward.
+- ' ' key - shoot on the side you are facing.
 
 
 
